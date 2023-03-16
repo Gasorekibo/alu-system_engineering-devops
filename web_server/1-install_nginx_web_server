@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# installing nginx server
+apt updata
+apt-get install nginx -y
+NEW=touch /var/www/html/index.html
+echo "Holberton School" | tee -a "$NEW"
+service nginx restart
