@@ -11,5 +11,5 @@ print %s 'frontend http80
             balance roundrobin
             server 5408-web-01 3.91.216.134:80 check
             server 5408-web-02 54.152.17.53:80 check
-        ' > /etc/haproxy/haproxy.cfg
+        ' >> /etc/haproxy/haproxy.cfg
 service haproxy restart
