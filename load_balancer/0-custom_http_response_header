@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # creating a Not find page of code 404
+sudo apt remove --purge nginx nginx-full nginx-common -y
 apt-get update
 apt-get install -y nginx
 
